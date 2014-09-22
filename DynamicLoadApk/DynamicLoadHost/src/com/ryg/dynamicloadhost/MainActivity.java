@@ -20,6 +20,7 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.ryg.plugin.PluginItem;
 import com.ryg.utils.DLUtils;
 
 public class MainActivity extends Activity implements OnItemClickListener {
@@ -143,13 +144,7 @@ public class MainActivity extends Activity implements OnItemClickListener {
         public TextView packageName;
     }
 
-    public static class PluginItem {
-        public PackageInfo packageInfo;
-        public String pluginPath;
 
-        public PluginItem() {
-        }
-    }
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

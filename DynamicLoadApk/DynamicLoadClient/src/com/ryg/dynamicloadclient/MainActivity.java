@@ -12,8 +12,9 @@ import android.view.ViewGroup.LayoutParams;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.Toast;
+import com.ryg.plugin.BasePluginActivity;
 
-public class MainActivity extends BaseActivity {
+public class MainActivity extends BasePluginActivity {
 
     private static final String TAG = "Client-MainActivity";
 

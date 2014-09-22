@@ -1,6 +1,7 @@
 package com.ryg.dynamicloadclient;
 
 import com.ryg.dynamicloadhost.sample.IFullLieftcycleRemoteActivity;
+import com.ryg.plugin.BasePluginActivity;
 import com.ryg.utils.TestHostClass;
 
 import android.os.Bundle;
@@ -12,7 +13,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-public class TestActivity extends BaseActivity implements IFullLieftcycleRemoteActivity{
+public class TestActivity extends BasePluginActivity implements IFullLieftcycleRemoteActivity{
 
     private static final String TAG = "TestActivity";
 
