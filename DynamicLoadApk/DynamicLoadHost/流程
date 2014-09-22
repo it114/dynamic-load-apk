@@ -1,0 +1,13 @@
+点击mainActivity中的每一个插件的流程
+
+1、带着插件地址（打开的activity【可选】），打开ProxyActivity
+
+2、在ProxyActivity的onCreate方法中初始化插件的资源相关类和设置主题等等，打开默认或者指定的activity
+
+3、在打开默认或者指定的activity中根据apk的路径实例化插件中的activity叫mRemoteActivity，这样一来，每当ProxyActivity执行自己的生命周期的方法的时候，就会调用插件的相关方法（ProxyActivity有相关逻辑）ProxyActivity一定不能设置为单例模式。
+
+4、在PorxyActivity加载Apk中的Activity的时候，设定Activity的proxy为ProActivity的实例，并调用Apk中指定的Activity的onCreate方法。
+
+5、打开插件Apk中的相关Activity之后，就可以执行“正常“的开发了。
+
+6、
