@@ -1,6 +1,7 @@
 package com.it114.app.zb.main;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -20,6 +21,8 @@ public class IndexActivity extends Activity implements View.OnClickListener {
 
     public void onCreate(Bundle bundle){
         super.onCreate(bundle);
+        setContentView(R.layout.index_layout);
+
         mBtnPhone  = (Button) findViewById(R.id.btn_index_phone);
         mBtnSms  = (Button) findViewById(R.id.btn_index_sms);
         mBtnBbs  = (Button) findViewById(R.id.btn_index_bbs);
@@ -44,7 +47,7 @@ public class IndexActivity extends Activity implements View.OnClickListener {
                 break;//bbs
 
             case R.id.btn_index_phone:
-
+                startActivity(PhoneCall.class);
                 break;//phone
 
             case R.id.btn_index_plugin:
@@ -52,7 +55,7 @@ public class IndexActivity extends Activity implements View.OnClickListener {
                 break;
 
             case R.id.btn_index_sms:
-
+                startActivity(Sms.class);
                 break;
 
             case R.id.btn_index_xuqiu:
@@ -62,5 +65,11 @@ public class IndexActivity extends Activity implements View.OnClickListener {
 
                 break;
         }
+    }
+
+    private void startActivity(Class cls){
+        Intent intent  = new Intent(this,cls);
+        startActivity(intent);
+
     }
 }

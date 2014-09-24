@@ -56,7 +56,11 @@
             android:id="@+id/btn_phonecall_set_call_time"
             android:text="设定来电时间"/>
 
-
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_phonecall_time"
+            android:text="设定的来电时间是："/>
 
 
     <TextView

@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 
 /**
  * Created by andy on 2014/9/24.
+ * 如果不能以文件名区分，最好定义好key的前缀
  */
 public class PerferenceUtil {
     private static final String _defaultSaveFileName = "_zb_data_file_";
