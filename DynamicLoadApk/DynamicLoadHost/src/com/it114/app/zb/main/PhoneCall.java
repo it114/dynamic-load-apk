@@ -110,7 +110,6 @@ public class PhoneCall extends Activity implements View.OnClickListener {
         }
     }
 
-
     private void removeAlarmManager()
     {
         PerferenceUtil.setLong(this, null, "_PHONE_CALL_TIME", -1L);
