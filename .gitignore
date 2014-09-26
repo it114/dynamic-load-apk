@@ -1,3 +1,6 @@
 /DynamicLoadApk/DynamicLoadClient/gen
 /DynamicLoadApk/DynamicLoadHost/bin
 /DynamicLoadApk/DynamicLoadHost/gen
+/DynamicLoadApk/DynamicLoadHost/DynamicLoadHost.iws
+/DynamicLoadApk/DynamicLoadHost/DynamicLoadHost.iml
+/DynamicLoadApk/DynamicLoadHost/DynamicLoadHost.ipr
