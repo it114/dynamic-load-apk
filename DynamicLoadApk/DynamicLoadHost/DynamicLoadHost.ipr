@@ -156,6 +156,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../DynamicLoadClient/DynamicLoadClient.iml" filepath="$PROJECT_DIR$/../DynamicLoadClient/DynamicLoadClient.iml" />
       <module fileurl="file://$PROJECT_DIR$/DynamicLoadHost.iml" filepath="$PROJECT_DIR$/DynamicLoadHost.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DynamicLoadHost.iml" filepath="$PROJECT_DIR$/DynamicLoadHost.iml" />
     </modules>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" project-jdk-name="Android API 19 Platform" project-jdk-type="Android SDK">
@@ -163,6 +164,15 @@
   </component>
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="" />
+  </component>
+  <component name="libraryTable">
+    <library name="android-support-v4">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/libs/android-support-v4.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
   </component>
 </project>
 

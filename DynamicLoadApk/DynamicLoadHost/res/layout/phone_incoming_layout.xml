@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/phone_u0_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@+id/linearLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@+id/jname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="来电人" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@+id/linearLayout2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/linearLayout1" android:layout_alignParentLeft="true" android:layout_alignParentRight="true">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@+id/jnumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="来电号码" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="48.0dip" android:layout_below="@id/linearLayout2" android:layout_alignParentLeft="true">
+        <ImageView android:id="@+id/imageView_touxiang" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/phone_u4_normal" />
+    </LinearLayout>
+    <com.it114.app.zb.views.PhoneLockView android:gravity="center_vertical" android:id="@+id/lockview" android:background="#00ffffff" android:layout_width="fill_parent" android:layout_height="300.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <RelativeLayout android:id="@+id/parent" android:background="@drawable/phone_jt" android:layout_width="fill_parent" android:layout_height="100.0dip">
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@+id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="向下滑动接听" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </com.it114.app.zb.views.PhoneLockView>
+    <LinearLayout android:orientation="vertical" android:id="@+id/lin_g" android:background="@drawable/phone_u34_normal" android:layout_width="fill_parent" android:layout_height="148.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@+id/textView1" android:background="@drawable/phone_u38_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="40.0dip" android:text="  " />
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@+id/textView2" android:background="@drawable/phone_u42_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="40.0dip" android:text="  " />
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@+id/textView4" android:background="@drawable/phone_u40_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="  " />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@+id/jieting" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@+id/tv_phonecall_guaduan" android:background="@drawable/phone_gd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="  " />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/linearLayout2" android:layout_alignParentLeft="true">
+        <TextView android:id="@+id/jtime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="  " />
+    </LinearLayout>
+</RelativeLayout>

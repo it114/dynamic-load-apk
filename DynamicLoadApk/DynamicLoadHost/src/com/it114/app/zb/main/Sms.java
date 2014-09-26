@@ -37,11 +37,14 @@ public class Sms extends Activity implements View.OnClickListener {
             case R.id.btn_sms_send:
                 String number = Sms.this.mEditTextPhoneNum.getText().toString();
                 String content = Sms.this.mEditTextSmsCopntent.getText().toString();
-                if (TextUtils.isEmpty(number)||TextUtils.isEmpty(content))
+                if (TextUtils.isEmpty(number)||TextUtils.isEmpty(content)){
                     Toast.makeText(Sms.this, "号码或短信内容不能为空", 0).show();
+                    return;
+                }
                 com.it114.app.zb.model.Sms   localSms = new com.it114.app.zb.model.Sms( number, content);
                 Sms.this.insertSMStoDB(localSms);
                 Toast.makeText(this, "发送成功，请查看收件箱", 0).show();
+                Sms.this.finish();
                 break;
         }
     }

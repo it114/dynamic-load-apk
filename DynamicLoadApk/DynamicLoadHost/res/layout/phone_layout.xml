@@ -6,26 +6,18 @@
               android:layout_height="match_parent">
 
 
-    <ToggleButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="虚拟来电开关"
-            android:id="@+id/tb_phonecall_isopen" android:checked="false"/>
 
-    <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="设定联系人"/>
     <!--快速设定自定义联系人-->
-    <LinearLayout
-            android:orientation="vertical"
+    <RelativeLayout
+            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_margin="5dp"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content" >
+        <ImageView android:layout_width="100dp" android:layout_height="100dp" android:layout_margin="5dp" android:src="@drawable/phone_u4_normal" android:id="@+id/img_user_head"/>
         <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_margin="5dp"
+                android:layout_margin="2dp" android:layout_toRightOf="@id/img_user_head" android:id="@+id/ll_phonecall_calluser"
                 android:layout_height="wrap_content" android:weightSum="1">
             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="来电人："/>
             <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.93"
@@ -33,19 +25,19 @@
         </LinearLayout>
         <LinearLayout
                 android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_margin="5dp"
+                android:layout_width="match_parent" android:layout_below="@id/ll_phonecall_calluser"
+                android:layout_margin="2dp" android:layout_toRightOf="@id/img_user_head"
                 android:layout_height="wrap_content" android:weightSum="1">
-            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="号   码："/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="号   码：" />
             <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.93"
-                      android:id="@+id/et_phonecall_callnumber"/>
+                      android:inputType="number"     android:id="@+id/et_phonecall_callnumber"/>
         </LinearLayout>
-    </LinearLayout>
+    </RelativeLayout>
     <!--快速设定自定义联系人 结束-->
     <Button
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="从通讯录选择联系人"
+            android:text="或者-->从通讯录选择联系人"
             android:id="@+id/btn_phonecall_select_calluser" />
     <!--快速设定自定义联系人-->
 
@@ -54,20 +46,10 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/btn_phonecall_set_call_time"
-            android:text="设定来电时间"/>
-
-    <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/tv_phonecall_time"
-            android:text="设定的来电时间是："/>
+            android:text="点击设定来电时间"/>
 
 
-    <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/tv_phonecall_overview"
-            android:text="设定的来电摘要："/>
+
 
 
     <Button
@@ -75,4 +57,11 @@
             android:layout_height="wrap_content"
             android:id="@+id/btn_phonecall_finish"
             android:text="搞定！等待来电~"/>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="来电状态："/>
+        <ToggleButton android:textOn="" android:textOff=""
+                android:layout_width="130dp"
+                android:layout_height="50dp"   android:background="@drawable/toogle_button_bg"
+                android:id="@+id/tb_phonecall_isopen" android:checked="false"/>
+    </LinearLayout>
 </LinearLayout>

@@ -2,7 +2,9 @@ package com.it114.app.zb.main;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import com.it114.app.zb.R;
@@ -43,7 +45,6 @@ public class IndexActivity extends Activity implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn_index_bbs:
-
                 break;//bbs
 
             case R.id.btn_index_phone:
@@ -71,5 +72,33 @@ public class IndexActivity extends Activity implements View.OnClickListener {
         Intent intent  = new Intent(this,cls);
         startActivity(intent);
 
+    }
+
+
+
+
+
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        // 如果是返回键,直接返回到桌面
+        // 经过测试,如果是乐Phone返回桌面会报错
+        if(keyCode == KeyEvent.KEYCODE_BACK){
+            if(notSupportKeyCodeBack()){
+                return super.onKeyDown(keyCode, event);
+            } else {
+                Intent i= new Intent(Intent.ACTION_MAIN);
+                i.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                i.addCategory(Intent.CATEGORY_HOME);
+                startActivity(i);
+                return false;
+            }
+        }
+        return super.onKeyDown(keyCode, event);
+    }
+    // 经过测试,如果是乐Phone返回桌面会报错
+    private boolean notSupportKeyCodeBack(){
+        if("3GW100".equals(Build.MODEL)|| "3GW101".equals(Build.MODEL) || "3GC101".equals (Build.MODEL)) {
+            return true;
+        }
+        return false;
     }
 }
