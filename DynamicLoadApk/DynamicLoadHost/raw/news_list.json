@@ -1,0 +1,151 @@
+{
+    "oschina": {
+        "catalog": "0",
+        "newsCount": "0",
+        "pagesize": "10",
+        "newslist": {
+            "news": [
+                {
+                    "id": "56026",
+                    "title": "OSChina 娱乐弹弹弹——多姿多彩的生活，你爱吗",
+                    "commentCount": "24",
+                    "author": "oschina",
+                    "authorid": "1",
+                    "pubDate": "2014-10-11 08:25:23",
+                    "url": "http://my.oschina.net/xxiaobian/blog/326564",
+                    "newstype": {
+                        "type": "3",
+                        "attachment": "326564",
+                        "authoruid2": "1428332"
+                    }
+                },
+                {
+                    "id": "56025",
+                    "title": "10月25日#南京#源创会,AngularJS/Netty/FibJS",
+                    "commentCount": "92",
+                    "author": "oschina",
+                    "authorid": "1",
+                    "pubDate": "2014-10-11 08:02:07",
+                    "url": "http://www.oschina.net/question/12_172750",
+                    "newstype": {
+                        "type": "2",
+                        "attachment": "172750",
+                        "authoruid2": "12"
+                    }
+                },
+                {
+                    "id": "56024",
+                    "title": "微软解释IE的HTTP/2协议 及对于互联网的意义",
+                    "commentCount": "34",
+                    "author": "oschina",
+                    "authorid": "1",
+                    "pubDate": "2014-10-11 07:59:11",
+                    "url": "",
+                    "newstype": {
+                        "type": "0",
+                        "authoruid2": "1"
+                    }
+                },
+                {
+                    "id": "56023",
+                    "title": "黑客暗战 —— 黑帽、白帽、灰帽背后的隐秘世界",
+                    "commentCount": "24",
+                    "author": "oschina",
+                    "authorid": "1",
+                    "pubDate": "2014-10-11 07:56:09",
+                    "url": "",
+                    "newstype": {
+                        "type": "0",
+                        "authoruid2": "1"
+                    }
+                },
+                {
+                    "id": "10002447",
+                    "title": "RavenDB 3.0 新特性：索引后端",
+                    "commentCount": "6",
+                    "author": "oschina",
+                    "authorid": "1",
+                    "pubDate": "2014-10-11 07:49:54",
+                    "url": "",
+                    "newstype": {
+                        "type": "0",
+                        "authoruid2": "1"
+                    }
+                },
+                {
+                    "id": "56021",
+                    "title": "浅谈 Ruby 中的 block, proc, lambda, method object 的区别",
+                    "commentCount": "8",
+                    "author": "oschina",
+                    "authorid": "1",
+                    "pubDate": "2014-10-11 07:49:00",
+                    "url": "http://my.oschina.net/gschen/blog/325546",
+                    "newstype": {
+                        "type": "3",
+                        "attachment": "325546",
+                        "authoruid2": "271937"
+                    }
+                },
+                {
+                    "id": "56020",
+                    "title": "互联网圈最近这几本热门新书，你都看了吗？",
+                    "commentCount": "40",
+                    "author": "oschina",
+                    "authorid": "1",
+                    "pubDate": "2014-10-11 07:47:33",
+                    "url": "",
+                    "newstype": {
+                        "type": "0",
+                        "authoruid2": "1"
+                    }
+                },
+                {
+                    "id": "56019",
+                    "title": "Pritunl —— 搭建个人简易 VPN 网络",
+                    "commentCount": "0",
+                    "author": "oschina",
+                    "authorid": "1",
+                    "pubDate": "2014-10-11 07:45:04",
+                    "url": "http://www.oschina.net/p/pritunl",
+                    "newstype": {
+                        "type": "1",
+                        "attachment": "pritunl",
+                        "authoruid2": "1"
+                    }
+                },
+                {
+                    "id": "56018",
+                    "title": "Redis 3.0.0 RC1 发布，支持 Redis Cluster",
+                    "commentCount": "16",
+                    "author": "oschina",
+                    "authorid": "1",
+                    "pubDate": "2014-10-11 07:33:30",
+                    "url": "",
+                    "newstype": {
+                        "type": "0",
+                        "authoruid2": "1"
+                    }
+                },
+                {
+                    "id": "56017",
+                    "title": "Ehcache 2.9.0 发布，Java 缓存框架",
+                    "commentCount": "4",
+                    "author": "oschina",
+                    "authorid": "1",
+                    "pubDate": "2014-10-11 07:28:53",
+                    "url": "",
+                    "newstype": {
+                        "type": "0",
+                        "authoruid2": "1"
+                    }
+                }
+            ]
+        },
+        "notice": {
+            "atmeCount": "0",
+            "msgCount": "0",
+            "reviewCount": "0",
+            "newFansCount": "0"
+        }
+    }
+}
